@@ -1,23 +1,43 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Title from "./components/Title";
+import Pokemon from "./components/Pokemon";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Title src="/img/pokemonTitle.png" />
+      <Pokemon
+        name="Charizard"
+        weight={90}
+        awesome={true}
+        terrifying={false}
+        abilities={["Blaze", "Solar power", "Tough claws", "Drought"]}
+        src={"/img/charizard.png"}
+      />
+      <Pokemon
+        name="Bulbasaur"
+        weight={6.9}
+        awesome={true}
+        terrifying={false}
+        abilities={["Overgrow", "Chlorophyll"]}
+        src={"/img/bulbasaur.png"}
+      />
+      <Pokemon
+        name="Mewtwo"
+        weight={122}
+        awesome={true}
+        terrifying={true}
+        abilities={["Pressure", "Unnerve", "Steadfast", "Insomnia"]}
+        src={"/img/mewtwo.png"}
+      />
+      <Pokemon
+        name="Slow Poke"
+        weight={65}
+        awesome={false}
+        terrifying={true}
+        abilities={["Intimidate", "Unnerve"]}
+        src={"/img/slowpoke.png"}
+      />
     </div>
   );
 }
