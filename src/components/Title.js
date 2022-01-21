@@ -2,7 +2,7 @@ import React from "react";
 
 function Title(props) {
   return (
-    <div>
+    <div className="container mb-5">
       <img
         style={{ maxWidth: "400px", alignContent: "center" }}
         alt="title"
