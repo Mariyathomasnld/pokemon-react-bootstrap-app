@@ -1,8 +1,9 @@
 import React from "react";
+import "./pokemon.scss";
 
 function Pokemon(props) {
   return (
-    <div className="card shadow-sm mb-4">
+    <div className="pokemon card shadow-sm mb-4">
       <div className="card-body">
         <h5 className="card-title">Pokemon name: {props.name}</h5>
         <img style={{ width: "200px" }} src={props.src} alt="pokemon cards" />
